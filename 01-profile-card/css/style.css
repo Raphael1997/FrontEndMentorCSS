@@ -3,14 +3,14 @@ html {
 }
 
 html::after, html::before {
-    content: "";
-    display: block;
+    content: '';
     position: fixed;
+    display: block;
+    background-color: #23B0B9;
     border-radius: 50%;
-    background-color: #23AFB9;
-    width: 300px;
-    height: 300px;
-    z-index: 10;
+    width: 100vmin;
+    height: 100vmin;
+    z-index: -1;
 }
 
 html::before {
