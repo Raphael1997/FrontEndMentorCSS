@@ -1,0 +1,95 @@
+html {
+    background-color: rgb(27, 161, 173)
+}
+
+html::after, html::before {
+    content: "";
+    display: block;
+    position: fixed;
+    border-radius: 50%;
+    background-color: #23AFB9;
+    width: 300px;
+    height: 300px;
+    z-index: 10;
+}
+
+html::before {
+    top: -100px;
+    left: -100px;
+}
+
+html::after {
+    bottom: -100px;
+    right: -100px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 20;
+}
+
+.card__header {
+    background-image: url("../images/bg-pattern-card.svg");
+    height: 120px;
+    position: relative;
+}
+
+.card__image {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.card__text {
+    margin: 0;
+    line-height: 1.5;
+    color: hsl(229, 23%, 23%)
+}
+
+.card__text--light {
+    color: hsl(0, 0%, 59%);
+    font-weight: normal;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid grey;
+}
+
+.card__stats {
+    width: 100%;
+    text-align: center;
+}
+
+.card__number {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
